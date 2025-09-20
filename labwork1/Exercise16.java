@@ -1,17 +1,13 @@
-public class Exercise16 {
-    public static void main(String[] args) {
-        if(args.length != 3){
-            return;
-        }
-        System.out.println(args[0]);
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
-        int c = Integer.parseInt(args[2]);
+import java.util.*;
+public class Exercise16{
+    public static void main( String[ ] args){
+        Scanner myObj = new Scanner(System.in);
 
-        boolean res = !(a == b && b == c);
-        System.out.println(res);
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        int a = myObj.nextInt();
+        int b = myObj.nextInt();
+        int c = myObj.nextInt();
+
+        boolean res = !( a == b && b  == c);
+        System.out.print(res);
     }
 }
